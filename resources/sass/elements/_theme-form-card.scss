@@ -1,0 +1,13 @@
+.theme-form-card {
+    border-radius: 10px;
+    border: 1px solid $neutral-700;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04);
+
+    .form-field-container {
+        padding: 24px 24px 0px 24px;
+    }
+    .form-actions{
+        border-top: 1px solid $neutral-700;
+        padding: 16px 24px;
+    }
+}

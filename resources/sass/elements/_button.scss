@@ -1,0 +1,62 @@
+.btn {
+    padding: 11px 32px;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    color: white;
+    @extend .text-md;
+    @extend .font-semibold;
+    
+    &.btn-primary {
+        background-color: $primary-500;
+        transition-duration: 0.4s;
+        border: 1px solid $primary-500;
+        &:hover {
+            background-color: $primary-600;
+            border: 1px solid $primary-600;
+        }
+    }
+    &.theme-btn {
+        padding: 9px 16px;
+        &.btn-primary,
+        &.btn-secondary {
+            @extend .text-sm;
+            @extend .font-semibold;
+        }
+        
+        &.btn-primary {
+            padding: 8.5px 16px;
+        }
+    }
+    &.btn-secondary {
+        background-color: white;
+        border: 1px solid $neutral-700;
+        color: $primary-500;
+        transition-duration: 0.4s;
+        &:hover {
+            background-color: $primary-50;
+            border-color: $primary-500 !important;
+        }
+    }
+    &.btn-delete {
+        color: $error-700;
+    }
+}
+
+.theme-link {
+    color: $primary-500;
+    text-decoration: none;
+    @extend .text-sm;
+    @extend .font-semibold;
+    display: inline-flex;
+    transition-duration: 0.4s;
+    &:hover {
+        color: $primary-600;
+    }
+}
+
+.delete-image-btn {
+    padding: 0px;
+    border: 1px solid $gray-300;
+    border-radius: 8px;
+    background-color: transparent;
+}

@@ -1,0 +1,76 @@
+.flatpickr-day.selected
+{
+    background: #004677 !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #fff;
+    border-color: #004677 !important;
+}
+
+.flatpickr-day.today
+{
+    border-color:  #004677 !important;
+}
+
+
+.flatpickr-day.today:hover
+{
+    background: #004677 !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #fff;
+    border-color: #004677 !important;
+}
+
+
+
+.flatpickr-calendar
+{
+    padding: 36px !important;
+    width:339.875px !important;
+}
+
+span.flatpickr-prev-month
+{
+    font-size: 0 !important;
+    /* display: flex; */
+    align-items: center !important;
+    justify-content: center !important;
+    height: 20px !important;
+    width: 20px !important;
+    line-height: unset !important;
+    padding: 39px !important
+}
+
+span.flatpickr-next-month
+{
+    font-size: 0 !important;
+    /* display: flex; */
+    align-items: center !important;
+    justify-content: center !important;
+    height: 20px !important;
+    width: 20px !important;
+    line-height: unset !important;
+    padding: 39px !important
+}
+
+
+ .flatpickr-next-month svg:hover
+{
+    color: #344054;
+}
+
+.flatpickr-month
+{
+    margin-bottom: 14px !important;
+}
+
+.flatpickr-current-month
+{
+    padding: 0px !important;
+}
+
+.input-addon.right .form-control
+{
+    padding-left: 40px !important;
+}

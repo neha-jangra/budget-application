@@ -1,0 +1,8 @@
+figure.highcharts-figure {
+    margin: 0 0 0rem;
+}
+#budget_overview,#income-by-donor {
+    @media (min-width: 1200px) {
+        height: 350px;
+    }
+}

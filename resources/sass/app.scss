@@ -1,0 +1,19 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+// Variables
+@import 'variables';
+@import 'typography';
+@import 'common';
+@import 'pages/pages';
+@import 'elements/elements';
+
+
+input[data-type="currency"] {
+    text-align: left !important;
+}
+
+

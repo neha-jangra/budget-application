@@ -1,0 +1,102 @@
+.reports-pdf-container {
+    .highcharts-subtitle ,.highcharts-subtitle tspan,.highcharts-legend-item text{
+        font-size: 10px !important;
+    }
+    .report-pdf {
+        tr {
+            &.primary-header {
+                td {
+                    padding: 9.5px 12px;
+                    color: $primary-500;
+                    background-color: $primary-50;
+                    border-top: 1px solid $gray-300;
+                    border-bottom: 1px solid $gray-300;
+                    font-size: 10px;
+                    font-weight: 600;
+                    line-height: 18px;
+        
+                    &:not(:first-child),
+                    &.border-l-gray-300 {
+                        border-left: 1px solid $gray-300 !important;
+                    }
+        
+                    .details {
+                        span {
+                            &.title {
+                                color: $gray-500;
+                                font-size: 12px;
+                                font-weight: 500;
+                                line-height: 18px;
+                            }
+                        }
+                        p {
+                            &.values {
+                                color: $gray-800;
+                                font-size: 12px;
+                                font-weight: 600;
+                                line-height: 18px;
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                    .total {
+                        display: none;
+                    }
+                    .table-detail-acordian {
+                        position: absolute;
+                        top: 0;
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+                &.total-direct-cost-tr {
+                    td {
+                        background-color: #f9fafb;
+                        border-left: none;
+                        &:first-child {
+                            color: $gray-500;
+                            min-width: 420px;
+                        }
+                        &.min-w-160 {
+                            min-width: 160px;
+                        }
+                        &:last-child {
+                            width: 100px;
+                        }
+                    }
+                }
+                &.sub-primary-header {
+                    td {
+                        border-top: none;
+                        padding: 8.5px 12px;
+                    }
+                }
+            }
+            &.secondary-header {
+                td {
+                    padding: 8.5px 12px;
+                    color: $gray-500;
+                    font-size: 10px;
+                    font-weight: 600;
+                    line-height: 18px;
+                    border-bottom: 1px solid $gray-300;
+                    position: relative;
+                    background-color: #f9fafb;
+                    &:not(:first-child) {
+                        border-left: 1px solid $gray-300;
+                        min-width: 250px;
+                    }
+                }
+            }
+            &.details-row td {
+                font-size: 10px !important;
+            }
+            td:not(.padding-0) {
+                padding: 8px 9px !important;
+            }
+        }
+        .estimated-row td {
+            font-size: 10px !important;
+        }
+    }
+}

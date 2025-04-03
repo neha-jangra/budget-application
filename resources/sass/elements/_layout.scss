@@ -1,0 +1,42 @@
+.main-container {
+    // min-height: 100vh;
+    background-color: white;
+
+    .content-wrapper {
+        height: auto;
+        // height: 100vh;
+        position: relative;
+        display: block;
+        top: 0px;
+        left: 0;
+        padding-left: 60px;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        background-color: white;
+
+        &.active {
+            padding-left: 254px;
+            -webkit-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+        }
+        @include media-breakpoint-down(md) {
+            padding-left: 60px !important;
+        }
+    }
+    
+    .page-header,
+    .content.withSideSpacing {
+        padding: 0px 24px;
+    }
+
+    .main-content {
+        padding: 24px 0px;
+        overflow-x: hidden;
+        // height: 100%;
+    }
+}
+
+body {
+    min-height: 100vh;
+    overflow-y: scroll;
+}

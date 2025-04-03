@@ -1,0 +1,639 @@
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.select2-container {
+    max-width: 100%;
+}
+
+//background-color
+.bg-primary-25 {
+    background-color: $primary-25;
+}
+
+.bg-transparent {
+    background-color: $transparent;
+}
+
+.bg-gray-900 {
+    background-color: $gray-900;
+}
+
+.bg-gray-200 {
+    background-color: $gray-200;
+}
+
+.bg-primary-900 {
+    background-color: $primary-900;
+}
+
+.bg-primary-50 {
+    background-color: $primary-50;
+}
+
+.bg-primary-500 {
+    background-color: $primary-500;
+}
+.bg-success-500 {
+    background-color: $success-500;
+}
+
+//text-color
+.text-gray-900 {
+    color: $gray-900;
+}
+
+.text-gray-400 {
+    color: $gray-400;
+}
+
+.text-gray-500 {
+    color: $gray-500;
+}
+
+.text-gray-700 {
+    color: $gray-700;
+}
+
+.text-gray-50 {
+    color: $gray-50;
+}
+
+.text-primary-800 {
+    color: $primary-800;
+}
+
+.text-primary-500 {
+    color: $primary-500;
+}
+
+.text-gray-600 {
+    color: $gray-600;
+}
+
+.text-gray-800 {
+    color: $gray-800;
+}
+
+.text-gray-300 {
+    color: $gray-300;
+}
+
+.text-error-500 {
+    color: $error-500 !important;
+}
+
+.text-error-700 {
+    color: $error-700;
+}
+
+//margin
+.mb-32 {
+    margin-bottom: 32px;
+}
+
+.mb-100 {
+    margin-bottom: 100px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-12 {
+    margin-bottom: 12px;
+}
+
+.me-12 {
+    margin-right: 12px;
+}
+
+.mb-6 {
+    margin-bottom: 6px;
+}
+
+.custom-mx-2px {
+    margin: 0px 2px;
+}
+.mb-24 {
+    margin-bottom: 24px;
+}
+
+.mb-31 {
+    margin-bottom: 31px;
+}
+
+//common classses
+.required {
+    color: $error-500;
+    margin-left: 2px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.rounded-lg {
+    border-radius: 8px;
+}
+
+.alert-error {
+    --bs-alert-color: #721c24;
+    --bs-alert-bg: #f8d7da;
+    --bs-alert-border-color: #f5c6cb;
+}
+
+#loader {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(19, 18, 18, 0.7); /* Use rgba() instead of rgb() */
+    z-index: 9999;
+}
+
+#loader::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 48%;
+    top: 40%;
+    width: 40px;
+    height: 40px;
+    border-style: solid;
+    border-color: #f1e5e5;
+    border-top-color: transparent;
+    border-width: 4px;
+    border-radius: 50%;
+    -webkit-animation: spin 0.8s linear infinite;
+    animation: spin 0.8s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+//select2 custom css
+.theme-modal {
+    .select2-container {
+        width: 100% !important;
+    }
+}
+
+///* width */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #fff;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $gray-400;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $gray-400;
+}
+
+//no-records
+.no-records {
+    border-radius: 12px;
+    height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.no-records-without-table {
+    border-radius: 12px;
+    height: 113px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $neutral-700;
+}
+
+//status Active/Inactive
+.status {
+    padding: 2px 8px;
+    border-radius: 16px;
+    display: inline-block;
+    @extend .text-xs;
+    @extend .font-medium;
+    &.active {
+        color: $blue-700;
+        background-color: $blue-50;
+    }
+    &.inactive {
+        color: #fff;
+        background-color: $error-700;
+    }
+}
+
+//avatar-group
+.avatar-group {
+    list-style: none;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+    .avatar {
+        min-width: 24px;
+        min-height: 24px;
+        border-radius: 30px;
+        border: 1.5px solid white;
+        background-color: #999fae;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @extend .text-xs;
+        @extend .font-medium;
+        position: relative;
+        z-index: 2;
+        &:not(:first-child) {
+            margin-left: -4px;
+        }
+        &:last-child {
+            border: 2px solid white;
+        }
+        &:nth-child(even) {
+            background-color: #737c8f;
+            // color: #3d3d3e;
+        }
+    }
+}
+.tooltip-inner {
+    text-transform: capitalize;
+}
+
+//alert-css
+body.swal2-toast-shown .swal2-container.swal2-top-end,
+body.swal2-toast-shown .swal2-container.swal2-top-right {
+    z-index: 10000;
+    .swal2-popup {
+        &.swal2-toast {
+            padding: 14px 16px !important;
+            width: 469px !important;
+            border-radius: 4px !important;
+            height: auto !important;
+            min-height: 74px !important;
+            color: #fff !important;
+            box-shadow: none !important;
+            flex-direction: column !important;
+            align-items: flex-start !important;
+
+            &.success {
+                background-color: #12b76a;
+            }
+            &.error {
+                background-color: #f04438;
+            }
+            .custom-toast-close {
+                position: absolute;
+                top: 8px;
+                right: 8px;
+                left: auto;
+                cursor: pointer;
+            }
+            .swal2-title {
+                margin: 0 10px 0px 0px !important;
+                font-size: 16px !important;
+                font-weight: 600 !important;
+                line-height: 24px !important;
+                letter-spacing: -0.016px !important;
+            }
+            .custom-toast {
+                p {
+                    margin-top: 2px;
+                    margin-bottom: 0;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    letter-spacing: -0.014px;
+                    margin-right: 10px;
+                }
+            }
+
+            #swal2-content {
+                text-align: left;
+                margin: 0;
+            }
+        }
+        .custom-toast-content p,
+        .swal2-title {
+            color: white !important;
+        }
+    }
+}
+
+.daily-rate-input {
+    .currency-select2 {
+        width: 85px;
+        top: 2px;
+        left: 2px;
+        .select2-container--default .select2-selection--single {
+            border-radius: none;
+            border: none;
+            box-shadow: none;
+            .select2-selection__rendered {
+                line-height: 36px;
+            }
+        }
+        .select2-container .select2-selection--single,
+        .select2-container--default
+            .select2-selection--single
+            .select2-selection__arrow {
+            height: 36px;
+        }
+    }
+    .form-control {
+        padding-left: 86px !important;
+    }
+}
+
+.invalid-feedback,
+.alert-error-dropdown {
+    margin-top: 6px;
+    color: $error-500;
+    font-size: 14px;
+    font-family: Inter;
+    line-height: 20px;
+}
+
+.alert-error-dropdown {
+    display: block !important;
+}
+
+.bigdrop {
+    @include media-breakpoint-up(sm) {
+        width: 400px !important;
+    }
+}
+
+.display-none {
+    display: none;
+}
+
+.pointer-events {
+    pointer-events: none;
+}
+// .iti__selected-dial-code {
+//     display: none !important;
+// }
+.phone_modal,
+.phone_modal2,
+.phone_modal3 {
+    padding-left: 52px;
+}
+
+.loader {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 9999;
+}
+
+.loader::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 48%;
+    top: 40%;
+    width: 40px;
+    height: 40px;
+    border-style: solid;
+    border-color: #f1e5e5;
+    border-top-color: transparent;
+    border-width: 4px;
+    border-radius: 50%;
+    -webkit-animation: spins 0.8s linear infinite;
+    animation: spins 0.8s linear infinite;
+}
+
+/* Add the @keyframes animation for the spinner */
+@keyframes spins {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+[type="reset"],
+[type="submit"],
+button,
+html [type="button"] {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.button-loader:focus {
+    outline: 0.05em dashed #ff6600;
+    outline-offset: 0.05em;
+}
+
+.button-loader::after {
+    content: "";
+    display: block;
+    width: 1.2em;
+    height: 1.2em;
+    position: absolute;
+    left: calc(50% - 0.75em);
+    top: calc(50% - 0.75em);
+    border: 0.15em solid #053354;
+    border-right-color: white;
+    border-radius: 50%;
+    animation: button-anim 0.7s linear infinite;
+    opacity: 0;
+}
+
+@keyframes button-anim {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.button-loader.loading::after {
+    opacity: 1;
+}
+
+.button-loader.loading > a > svg {
+    visibility: hidden;
+}
+
+.gap-12 {
+    gap: 0.75rem;
+}
+
+.percentage-text {
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: -0.011px;
+    border-radius: 30px;
+    padding: 1px 5px;
+}
+
+.border-r-border-color {
+    border-right: 1px solid $gray-300;
+}
+
+.transition-duration-point4 {
+    transition-duration: 0.4s;
+}
+
+.whitespace-nowrap {
+    white-space: nowrap;
+}
+
+.bottom-0 {
+    bottom: 0;
+}
+
+.right-0 {
+    right: 0;
+}
+
+.left-0 {
+    left: 0;
+}
+
+.object-cover {
+    object-fit: cover;
+}
+
+.budget-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.info-icon-container {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px; /* Spacing between amount and icon */
+}
+
+.info-icon {
+    background-color: #f04438; /* Professional blue color */
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 1;
+    z-index: 10;
+}
+
+.info-text {
+    display: none;
+    position: absolute;
+    top: 120%; /* Position below the icon */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f8d7da; /* Light red background for warning */
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 12px;
+    width: 250px; /* Adjust width as needed */
+    max-width: 250px; /* Limit the width */
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word;
+    overflow: visible;
+    text-align: center;
+}
+
+.info-icon-container:hover .info-text {
+    display: block;
+}
+
+/* Ensure the tooltip is not clipped by other columns */
+.row {
+    position: relative;
+}
+
+.col {
+    position: relative;
+    overflow: visible; /* Allow tooltip to be visible outside the column */
+}
+/* Style the unread comments badge */
+.unread-comments-count {
+    background-color: #004677; /* Project theme color */
+    color: white; /* White text color */
+    font-weight: bold;
+    border-radius: 12px; /* Rounded corners */
+    padding: 3px 10px;
+    margin-left: 8px;
+    font-size: 0.85em;
+    position: relative;
+}
+
+/* Only show "NEW" label when there's a count */
+.unread-comments-count::before {
+    content: attr(data-new-label); /* Use a data attribute to display "NEW" */
+    color: #004677; /* Blue text color */
+    background-color: white; /* White background */
+    font-size: 0.65em;
+    font-weight: bold;
+    padding: 1px 4px;
+    border-radius: 6px;
+    position: absolute;
+    top: -10px; /* Adjust positioning */
+    right: -14px; /* Adjust positioning */
+    transform: rotate(-10deg); /* Slight tilt for style */
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    display: none; /* Initially hidden */
+}
+
+/* Show the "NEW" label if there is a count */
+.unread-comments-count:not(:empty)::before {
+    display: block; /* Show only if there's an unread count */
+}
+
+/* Adjust positioning to ensure the label doesn't cover the number */
+.unread-comments-count {
+    padding-right: 20px; /* Increase padding to make room */
+}
